@@ -15,10 +15,10 @@ from openai import OpenAI
 from starlette.responses import FileResponse
 from starlette.staticfiles import StaticFiles
 
-from chap07.pojo.ApiResponse import ApiResponse
-from chap07.pojo.ChatRequest import ChatRequest
-from chap07.utils.index import generate_session_id, get_session_data
-from chap07.utils.prompt import SYSTEM_PROMPT
+from pojo.ApiResponse import ApiResponse
+from pojo.ChatRequest import ChatRequest
+from utils.index import generate_session_id, get_session_data
+from utils.prompt import SYSTEM_PROMPT
 
 app = FastAPI(title="汉字迷盒", description="一个用Python编写的汉字迷盒游戏")
 
